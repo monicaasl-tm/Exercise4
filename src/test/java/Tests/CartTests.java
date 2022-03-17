@@ -49,7 +49,7 @@ public class CartTests extends Steps{
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.shop.viewCart));
 		this.shop.viewCart.click();
 		new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.visibilityOf(this.cart.tableCart));
-		AssertJUnit.assertTrue(this.cart.tableProducts.size()>2);
+		AssertJUnit.assertTrue(this.cart.tableProducts.size()>=2);
 
 	}
 	

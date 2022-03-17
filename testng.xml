@@ -2,6 +2,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test thread-count="5" name="Test">
+		<groups>
+			<run>
+				<include name="ShopPage"></include>
+				<include name="ContactPage"></include>
+				<include name="CartPage"></include>
+			</run>
+		</groups>
 		<packages>
 			<package name="Tests" />
 		</packages>

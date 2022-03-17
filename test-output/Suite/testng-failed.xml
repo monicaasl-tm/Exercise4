@@ -2,42 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="ShopPage"/>
+        <include name="ContactPage"/>
+        <include name="CartPage"/>
+      </run>
+    </groups>
     <classes>
-      <class name="Tests.ShopTests">
-        <methods>
-          <include name="setUp"/>
-          <include name="nineItemsPerPage"/>
-          <include name="searchErrorMessage"/>
-          <include name="searchProduct"/>
-          <include name="productCategories"/>
-          <include name="recentViewedProducts"/>
-          <include name="categoryClothes"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests.ShopTests -->
-      <class name="Tests.CartTests">
-        <methods>
-          <include name="checkOut"/>
-          <include name="cartProducts"/>
-          <include name="setUp"/>
-          <include name="productsFromCat"/>
-          <include name="removeProduct"/>
-          <include name="productsFromSearch"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Tests.CartTests -->
       <class name="Tests.ContactTests">
         <methods>
-          <include name="addressBox"/>
-          <include name="nameField"/>
-          <include name="setUp"/>
-          <include name="phoneField"/>
-          <include name="timeBox"/>
-          <include name="phoneBox"/>
           <include name="messageField"/>
-          <include name="emailBox"/>
+          <include name="report"/>
           <include name="callUsNow"/>
-          <include name="emailField"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.ContactTests -->

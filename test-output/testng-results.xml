@@ -1,32 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
+<testng-results ignored="2" total="22" passed="18" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-15T15:26:39 PDT" name="Default suite" finished-at="2022-03-15T15:27:02 PDT" duration-ms="23746">
+  <suite started-at="2022-03-16T21:02:02 PDT" name="Suite" finished-at="2022-03-16T21:05:16 PDT" duration-ms="194901">
     <groups>
+      <group name="CartPage">
+        <method signature="CartTests.cartProducts()[pri:0, instance:Tests.CartTests@1139b2f3]" name="cartProducts" class="Tests.CartTests"/>
+        <method signature="CartTests.checkOut()[pri:0, instance:Tests.CartTests@1139b2f3]" name="checkOut" class="Tests.CartTests"/>
+        <method signature="CartTests.productsFromCat()[pri:0, instance:Tests.CartTests@1139b2f3]" name="productsFromCat" class="Tests.CartTests"/>
+        <method signature="CartTests.productsFromSearch()[pri:0, instance:Tests.CartTests@1139b2f3]" name="productsFromSearch" class="Tests.CartTests"/>
+        <method signature="CartTests.removeProduct()[pri:0, instance:Tests.CartTests@1139b2f3]" name="removeProduct" class="Tests.CartTests"/>
+      </group> <!-- CartPage -->
+      <group name="ShopPage">
+        <method signature="ShopTests.categoryClothes()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="categoryClothes" class="Tests.ShopTests"/>
+        <method signature="ShopTests.nineItemsPerPage()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="nineItemsPerPage" class="Tests.ShopTests"/>
+        <method signature="ShopTests.productCategories()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="productCategories" class="Tests.ShopTests"/>
+        <method signature="ShopTests.recentViewedProducts()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="recentViewedProducts" class="Tests.ShopTests"/>
+        <method signature="ShopTests.searchErrorMessage()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="searchErrorMessage" class="Tests.ShopTests"/>
+        <method signature="ShopTests.searchProduct()[pri:0, instance:Tests.ShopTests@1ddf84b8]" name="searchProduct" class="Tests.ShopTests"/>
+      </group> <!-- ShopPage -->
       <group name="ContactPage">
-        <method signature="ContactTests.addressBox()[pri:0, instance:Tests.ContactTests@bef2d72]" name="addressBox" class="Tests.ContactTests"/>
-        <method signature="ContactTests.callUsNow()[pri:0, instance:Tests.ContactTests@bef2d72]" name="callUsNow" class="Tests.ContactTests"/>
-        <method signature="ContactTests.emailBox()[pri:0, instance:Tests.ContactTests@bef2d72]" name="emailBox" class="Tests.ContactTests"/>
-        <method signature="ContactTests.emailField()[pri:0, instance:Tests.ContactTests@bef2d72]" name="emailField" class="Tests.ContactTests"/>
-        <method signature="ContactTests.messageField()[pri:0, instance:Tests.ContactTests@bef2d72]" name="messageField" class="Tests.ContactTests"/>
-        <method signature="ContactTests.nameField()[pri:0, instance:Tests.ContactTests@bef2d72]" name="nameField" class="Tests.ContactTests"/>
-        <method signature="ContactTests.phoneBox()[pri:0, instance:Tests.ContactTests@bef2d72]" name="phoneBox" class="Tests.ContactTests"/>
-        <method signature="ContactTests.phoneField()[pri:0, instance:Tests.ContactTests@bef2d72]" name="phoneField" class="Tests.ContactTests"/>
-        <method signature="ContactTests.timeBox()[pri:0, instance:Tests.ContactTests@bef2d72]" name="timeBox" class="Tests.ContactTests"/>
+        <method signature="ContactTests.addressBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="addressBox" class="Tests.ContactTests"/>
+        <method signature="ContactTests.callUsNow()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="callUsNow" class="Tests.ContactTests"/>
+        <method signature="ContactTests.emailBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="emailBox" class="Tests.ContactTests"/>
+        <method signature="ContactTests.emailField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="emailField" class="Tests.ContactTests"/>
+        <method signature="ContactTests.messageField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="messageField" class="Tests.ContactTests"/>
+        <method signature="ContactTests.nameField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="nameField" class="Tests.ContactTests"/>
+        <method signature="ContactTests.phoneBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="phoneBox" class="Tests.ContactTests"/>
+        <method signature="ContactTests.phoneField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="phoneField" class="Tests.ContactTests"/>
+        <method signature="ContactTests.timeBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" name="timeBox" class="Tests.ContactTests"/>
       </group> <!-- ContactPage -->
     </groups>
-    <test started-at="2022-03-15T15:26:39 PDT" name="Default test" finished-at="2022-03-15T15:27:02 PDT" duration-ms="23746">
+    <test started-at="2022-03-16T21:02:02 PDT" name="Test" finished-at="2022-03-16T21:05:16 PDT" duration-ms="194901">
       <class name="Tests.ContactTests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:39 PDT" name="setUp" finished-at="2022-03-15T15:26:45 PDT" duration-ms="6761" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:01 PDT" name="report" finished-at="2022-03-16T21:02:02 PDT" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- report -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:02 PDT" name="setUp" finished-at="2022-03-16T21:02:08 PDT" duration-ms="6526" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addressBox()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:46 PDT" name="addressBox" finished-at="2022-03-15T15:26:48 PDT" duration-ms="2765" status="PASS">
+        <test-method signature="addressBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:08 PDT" name="addressBox" finished-at="2022-03-16T21:02:11 PDT" duration-ms="2776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addressBox -->
-        <test-method signature="callUsNow()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:48 PDT" name="callUsNow" finished-at="2022-03-15T15:26:49 PDT" duration-ms="934" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:11 PDT" name="tearDown" finished-at="2022-03-16T21:02:11 PDT" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:11 PDT" name="setUp" finished-at="2022-03-16T21:02:16 PDT" duration-ms="5032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="callUsNow()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:16 PDT" name="callUsNow" finished-at="2022-03-16T21:02:19 PDT" duration-ms="2987" status="FAIL">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 
@@ -68,15 +95,39 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- callUsNow -->
-        <test-method signature="emailBox()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:49 PDT" name="emailBox" finished-at="2022-03-15T15:26:50 PDT" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:19 PDT" name="tearDown" finished-at="2022-03-16T21:02:19 PDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:19 PDT" name="setUp" finished-at="2022-03-16T21:02:24 PDT" duration-ms="4549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emailBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:24 PDT" name="emailBox" finished-at="2022-03-16T21:02:26 PDT" duration-ms="2674" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailBox -->
-        <test-method signature="emailField()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:50 PDT" name="emailField" finished-at="2022-03-15T15:26:52 PDT" duration-ms="1886" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:26 PDT" name="tearDown" finished-at="2022-03-16T21:02:27 PDT" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:27 PDT" name="setUp" finished-at="2022-03-16T21:02:32 PDT" duration-ms="5516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emailField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:32 PDT" name="emailField" finished-at="2022-03-16T21:02:36 PDT" duration-ms="3540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emailField -->
-        <test-method signature="messageField()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:52 PDT" name="messageField" finished-at="2022-03-15T15:26:55 PDT" duration-ms="3642" status="FAIL">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:36 PDT" name="tearDown" finished-at="2022-03-16T21:02:36 PDT" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:36 PDT" name="setUp" finished-at="2022-03-16T21:02:40 PDT" duration-ms="4298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="messageField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:40 PDT" name="messageField" finished-at="2022-03-16T21:02:46 PDT" duration-ms="6354" status="FAIL">
           <exception class="java.lang.AssertionError">
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 
@@ -119,27 +170,195 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- messageField -->
-        <test-method signature="nameField()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:26:55 PDT" name="nameField" finished-at="2022-03-15T15:27:00 PDT" duration-ms="4621" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:46 PDT" name="tearDown" finished-at="2022-03-16T21:02:47 PDT" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:47 PDT" name="setUp" finished-at="2022-03-16T21:02:51 PDT" duration-ms="4403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nameField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:51 PDT" name="nameField" finished-at="2022-03-16T21:02:56 PDT" duration-ms="5213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nameField -->
-        <test-method signature="phoneBox()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:27:00 PDT" name="phoneBox" finished-at="2022-03-15T15:27:01 PDT" duration-ms="619" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:56 PDT" name="tearDown" finished-at="2022-03-16T21:02:56 PDT" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:02:56 PDT" name="setUp" finished-at="2022-03-16T21:03:01 PDT" duration-ms="4821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="phoneBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:01 PDT" name="phoneBox" finished-at="2022-03-16T21:03:04 PDT" duration-ms="2462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- phoneBox -->
-        <test-method signature="phoneField()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:27:01 PDT" name="phoneField" finished-at="2022-03-15T15:27:02 PDT" duration-ms="947" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:04 PDT" name="tearDown" finished-at="2022-03-16T21:03:04 PDT" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:04 PDT" name="setUp" finished-at="2022-03-16T21:03:08 PDT" duration-ms="4542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="phoneField()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:08 PDT" name="phoneField" finished-at="2022-03-16T21:03:11 PDT" duration-ms="3062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- phoneField -->
-        <test-method signature="timeBox()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:27:02 PDT" name="timeBox" finished-at="2022-03-15T15:27:02 PDT" duration-ms="752" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:11 PDT" name="tearDown" finished-at="2022-03-16T21:03:12 PDT" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:12 PDT" name="setUp" finished-at="2022-03-16T21:03:16 PDT" duration-ms="4707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="timeBox()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:16 PDT" name="timeBox" finished-at="2022-03-16T21:03:20 PDT" duration-ms="3970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- timeBox -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@bef2d72]" started-at="2022-03-15T15:27:02 PDT" name="tearDown" finished-at="2022-03-15T15:27:02 PDT" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ContactTests@6a28ffa4]" started-at="2022-03-16T21:03:20 PDT" name="tearDown" finished-at="2022-03-16T21:03:20 PDT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.ContactTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.ShopTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:20 PDT" name="setUp" finished-at="2022-03-16T21:03:25 PDT" duration-ms="4214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="categoryClothes()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:25 PDT" name="categoryClothes" finished-at="2022-03-16T21:03:29 PDT" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryClothes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:29 PDT" name="tearDown" finished-at="2022-03-16T21:03:29 PDT" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:29 PDT" name="setUp" finished-at="2022-03-16T21:03:34 PDT" duration-ms="4332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="nineItemsPerPage()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:34 PDT" name="nineItemsPerPage" finished-at="2022-03-16T21:03:36 PDT" duration-ms="2215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nineItemsPerPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:36 PDT" name="tearDown" finished-at="2022-03-16T21:03:36 PDT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:36 PDT" name="setUp" finished-at="2022-03-16T21:03:41 PDT" duration-ms="4440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productCategories()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:41 PDT" name="productCategories" finished-at="2022-03-16T21:03:43 PDT" duration-ms="2164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productCategories -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:43 PDT" name="tearDown" finished-at="2022-03-16T21:03:43 PDT" duration-ms="77" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:43 PDT" name="setUp" finished-at="2022-03-16T21:03:49 PDT" duration-ms="6129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="recentViewedProducts()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:49 PDT" name="recentViewedProducts" finished-at="2022-03-16T21:03:56 PDT" duration-ms="7152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recentViewedProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:56 PDT" name="tearDown" finished-at="2022-03-16T21:03:56 PDT" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:03:56 PDT" name="setUp" finished-at="2022-03-16T21:04:00 PDT" duration-ms="4273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchErrorMessage()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:04:00 PDT" name="searchErrorMessage" finished-at="2022-03-16T21:04:05 PDT" duration-ms="4453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:04:05 PDT" name="tearDown" finished-at="2022-03-16T21:04:05 PDT" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:04:05 PDT" name="setUp" finished-at="2022-03-16T21:04:09 PDT" duration-ms="4286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="searchProduct()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:04:09 PDT" name="searchProduct" finished-at="2022-03-16T21:04:13 PDT" duration-ms="3581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.ShopTests@1ddf84b8]" started-at="2022-03-16T21:04:13 PDT" name="tearDown" finished-at="2022-03-16T21:04:13 PDT" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.ShopTests -->
+      <class name="Tests.CartTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:13 PDT" name="setUp" finished-at="2022-03-16T21:04:17 PDT" duration-ms="4171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="cartProducts()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:17 PDT" name="cartProducts" finished-at="2022-03-16T21:04:23 PDT" duration-ms="5731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartProducts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:23 PDT" name="tearDown" finished-at="2022-03-16T21:04:23 PDT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:23 PDT" name="setUp" finished-at="2022-03-16T21:04:27 PDT" duration-ms="4201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkOut()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:27 PDT" name="checkOut" finished-at="2022-03-16T21:04:35 PDT" duration-ms="8019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:35 PDT" name="tearDown" finished-at="2022-03-16T21:04:35 PDT" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:35 PDT" name="setUp" finished-at="2022-03-16T21:04:40 PDT" duration-ms="5020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsFromCat()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:40 PDT" name="productsFromCat" finished-at="2022-03-16T21:04:49 PDT" duration-ms="8641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsFromCat -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:49 PDT" name="tearDown" finished-at="2022-03-16T21:04:49 PDT" duration-ms="75" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:49 PDT" name="setUp" finished-at="2022-03-16T21:04:54 PDT" duration-ms="5365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="productsFromSearch()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:04:54 PDT" name="productsFromSearch" finished-at="2022-03-16T21:05:01 PDT" duration-ms="7122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsFromSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:05:01 PDT" name="tearDown" finished-at="2022-03-16T21:05:01 PDT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:05:01 PDT" name="setUp" finished-at="2022-03-16T21:05:06 PDT" duration-ms="5034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="removeProduct()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:05:06 PDT" name="removeProduct" finished-at="2022-03-16T21:05:16 PDT" duration-ms="9869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.CartTests@1139b2f3]" started-at="2022-03-16T21:05:16 PDT" name="tearDown" finished-at="2022-03-16T21:05:16 PDT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CartTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
