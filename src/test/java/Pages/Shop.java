@@ -64,5 +64,14 @@ public class Shop {
 		@FindBy(xpath = "//section[@id='woocommerce_recently_viewed_products-1']/ul/child::*")
 		public List<WebElement> recentlyViewed;
 		
+		@FindBy(xpath = "//span[@class='price']/child::*")
+		public List<WebElement> productPrice;
+		
+		@FindBy(xpath = "//select[@class='orderby']")
+		public WebElement defaultSorting;
+		
+		@FindBy(xpath = "//option[@value='price']")
+		public WebElement sortByPrice;
+		
 }
 

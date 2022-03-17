@@ -1,6 +1,8 @@
 package Tests;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Collections;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,6 +34,34 @@ public class ShopTests extends Steps {
 			this.shop.searchButton.click();
 			new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(shop.searchResultsError));
 			AssertJUnit.assertTrue(this.shop.searchResultsError.isDisplayed());
+			
+		}
+		
+		//TC_RQ_-002_002_004
+		@Test(groups = {"ShopPage"})
+		public void sortByPrice() {
+			ArrayList < Float > prices = new ArrayList < Float > ();
+			this.home.shopButton.click();
+			this.shop.defaultSorting.click();
+			this.shop.sortByPrice.click();
+			
+			 for(WebElement li1:this.shop.productPrice)
+		        {	
+				 	String s_price = li1.getText().replace("$","");
+				 	Float f_price = Float.parseFloat(s_price);
+				 	prices.add(f_price);
+		            //System.out.println(li1.getText());
+		        }
+			 Collections.sort(prices);
+			 
+			 int counter=0;
+			 for (WebElement li1:this.shop.productPrice) {
+			      String s_price = li1.getText().replace("$","");
+			      Float f_price = Float.parseFloat(s_price);
+			      AssertJUnit.assertEquals(prices.get(counter), f_price);
+			      counter ++;
+			 }
+			 
 			
 		}
 		

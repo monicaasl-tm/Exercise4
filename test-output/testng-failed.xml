@@ -10,6 +10,14 @@
       </run>
     </groups>
     <classes>
+      <class name="Tests.ShopTests">
+        <methods>
+          <include name="sortByPrice"/>
+          <include name="report"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.ShopTests -->
       <class name="Tests.ContactTests">
         <methods>
           <include name="messageField"/>

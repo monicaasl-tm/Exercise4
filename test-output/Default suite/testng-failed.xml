@@ -5,12 +5,8 @@
     <classes>
       <class name="Tests.ShopTests">
         <methods>
-          <include name="nineItemsPerPage"/>
-          <include name="searchErrorMessage"/>
-          <include name="searchProduct"/>
-          <include name="productCategories"/>
-          <include name="recentViewedProducts"/>
-          <include name="categoryClothes"/>
+          <include name="sortByPrice"/>
+          <include name="report"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
