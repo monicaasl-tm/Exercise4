@@ -7,7 +7,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Contact {
 	
-	// Page Factory Web Elements
 	public Contact(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}

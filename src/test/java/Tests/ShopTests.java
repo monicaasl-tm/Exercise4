@@ -14,6 +14,7 @@ import Steps.Steps;
 
 public class ShopTests extends Steps {
 
+
 	//TC_RQ_-001_001_001
 		@Test(groups = {"ShopPage"})
 		public void searchProduct() {
@@ -43,18 +44,19 @@ public class ShopTests extends Steps {
 			ArrayList < Float > prices = new ArrayList < Float > ();
 			this.home.shopButton.click();
 			this.shop.defaultSorting.click();
-			this.shop.sortByPrice.click();
 			
-			 for(WebElement li1:this.shop.productPrice)
+			 for(WebElement li1:this.shop.productPrice) 
 		        {	
 				 	String s_price = li1.getText().replace("$","");
 				 	Float f_price = Float.parseFloat(s_price);
 				 	prices.add(f_price);
-		            //System.out.println(li1.getText());
 		        }
-			 Collections.sort(prices);
 			 
-			 int counter=0;
+			 Collections.sort(prices); 
+			 this.shop.sortByPrice.click(); 
+			 new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(shop.productPrice.get(0)));
+			 
+			 int counter=0; 
 			 for (WebElement li1:this.shop.productPrice) {
 			      String s_price = li1.getText().replace("$","");
 			      Float f_price = Float.parseFloat(s_price);

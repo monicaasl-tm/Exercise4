@@ -11,7 +11,6 @@ import Steps.Steps;
 
 public class ContactTests extends Steps {
 	
-
 	// TC_RQ_-002_001_001
 	@Test(groups = {"ContactPage"})
 	public void emailBox() {

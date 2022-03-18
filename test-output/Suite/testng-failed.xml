@@ -12,19 +12,21 @@
     <classes>
       <class name="Tests.ShopTests">
         <methods>
+          <include name="tearDownTest"/>
           <include name="sortByPrice"/>
+          <include name="initTest"/>
           <include name="report"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="endReport"/>
         </methods>
       </class> <!-- Tests.ShopTests -->
       <class name="Tests.ContactTests">
         <methods>
+          <include name="tearDownTest"/>
+          <include name="initTest"/>
           <include name="messageField"/>
           <include name="report"/>
+          <include name="endReport"/>
           <include name="callUsNow"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- Tests.ContactTests -->
     </classes>

@@ -2,7 +2,9 @@ package Steps;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -17,43 +19,57 @@ import Pages.Shop;
 
 public class Steps {
 	
-
+	//Pasos comunes entre todos los test
 	public String baseURL = "https://practice.automationbro.com/";
 
 	private String driverPath = "src/test/resources/drivers/chromedriver";
 	protected WebDriver driver;
-	protected Home home;
-	protected Shop shop;
-	protected Contact contact;
-	protected Cart cart;
 	ExtentReports report;
 	ExtentTest test;
+	public Home home;
+	public Shop shop;
+	public Cart cart;
+	public Contact contact;
 	
-	@BeforeSuite(alwaysRun = true)
-	public void report() {
-		report = new ExtentReports("/Users/monicasanchez/test.html");
-		test = report.startTest("Verify Welcome Text");
-		test.log(LogStatus.INFO, "Browser Started");
+	
+	@BeforeSuite(alwaysRun = true) //crear reporte
+	public void report(ITestContext ctx) { //guarda atributos a lo largo de los tests
+		report = new ExtentReports("/Users/monicasanchez/test.html"); //archivo que crea y donde lo guarda
+		ctx.setAttribute("report", report); //se pone disponible al resto de los tests
 		
 	}
-	
+
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() {
-		
+	public void initTest(ITestContext ctx) {
+		this.report  = (ExtentReports) ctx.getAttribute("report");
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		this.driver = new ChromeDriver();
-		this.home = new Home(this.driver);
 		this.shop = new Shop(this.driver);
-		this.contact = new Contact(this.driver);
 		this.cart = new Cart(this.driver);
-		this.driver.get(baseURL);
+		this.home = new Home(this.driver);
+		this.contact = new Contact(this.driver);
+		this.test = this.report.startTest(this.getClass() + " Test ");
+		this.test.log(LogStatus.INFO, "Test Started");
+		this.driver.get(this.baseURL);
 		this.driver.manage().window().maximize();
-
+		ctx.setAttribute("driver", this.driver);
 	}
 	
 	@AfterMethod(alwaysRun = true)
-	public void tearDown() {
+	public void tearDownTest(ITestContext ctx) {
+		
+		this.test.log(LogStatus.INFO, "Test Finished");
+		this.report.endTest(this.test);
+		this.driver = (WebDriver) ctx.getAttribute("driver");
 		this.driver.close();
+	}
+	
+
+	@AfterSuite(alwaysRun = true)
+	public void endReport(ITestContext  ctx) {
+		this.report = (ExtentReports) ctx.getAttribute("report");
+		report.flush();
+		
 	}
 
 }

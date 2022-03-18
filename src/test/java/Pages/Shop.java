@@ -9,12 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Shop {
 
-	// Page Factory Web Elements
+
 	public Shop(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
-	//Mapeo
 		
 		@FindBy(xpath = "//input[@id='woocommerce-product-search-field-0']")
 		public WebElement searchTextBox;

@@ -9,14 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Cart {
 	
-	
-	// Page Factory Web Elements
 	public Cart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-
-	
-	
 
 	@FindBy(xpath = "//table[@class='shop_table shop_table_responsive cart woocommerce-cart-form__contents']")
 	public WebElement tableCart;
